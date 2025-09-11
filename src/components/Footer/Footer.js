@@ -87,7 +87,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-20 bg-[#1FFFA5] xl:px-[120px] xl:pt-[64px] px-6 py-8">
+    <footer className=" bg-[#1FFFA5] xl:px-[120px] xl:pt-[64px] px-6 py-8">
       {/* Desktop Layout */}
       <div className="hidden sm:flex justify-between items-center">
         {/* Left Side - Logo */}
