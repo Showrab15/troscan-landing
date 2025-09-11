@@ -2,12 +2,15 @@
 module.exports = {
   content: ["./src/app/**/*.{js,jsx}", "./src/components/**/*.{js,jsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["'General Sans'", "sans-serif"], // Use exact name from @font-face
-      },
+    fontFamily: {
+      sans: ["'General Sans'", "sans-serif"],
+    },
+    screens: {
+      sm: "390px", // small devices / mobile
+      md: "740px", // tablets
+      lg: "1440px", // large screens / desktop
     },
   },
   plugins: [],
-  darkMode: "class", // optional if you want manual toggle
+  darkMode: "class",
 };
