@@ -11,6 +11,6 @@ module.exports = {
       lg: "1440px", // large screens / desktop
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
   darkMode: "class",
 };

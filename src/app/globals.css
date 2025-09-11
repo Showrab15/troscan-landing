@@ -30,3 +30,22 @@ body {
   color: var(--foreground);
   font-family: "General Sans", sans-serif;
 }
+
+.faq-card {
+  background: #192420; /* default background */
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.faq-card:hover {
+  background: linear-gradient(
+      0deg,
+      var(--Color-Card, #192420),
+      var(--Color-Card, #192420)
+    ),
+    radial-gradient(
+      51.72% 51.72% at 50% 92.16%,
+      rgba(31, 255, 165, 0.2) 0%,
+      rgba(31, 255, 165, 0.02) 100%
+    );
+}

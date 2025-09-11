@@ -38,18 +38,18 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Your Name"
-              className="flex-1 border-2 border-[#2A3C36] rounded-[4px] p-[18px] text-[#B2B2B2] placeholder:text-[#B2B2B2] placeholder:text-[12px] focus:outline-none"
+              className="flex-1 border-2 border-[#1FFFA5] rounded-[4px] p-[18px] text-[#B2B2B2] placeholder:text-[#B2B2B2] placeholder:text-[12px] focus:outline-none"
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-1 border-2 border-[#2A3C36] rounded-[4px] p-[18px] 
+              className="flex-1 border-2 border-[#1FFFA5] rounded-[4px] p-[18px] 
               text-[#B2B2B2] placeholder:text-[#B2B2B2]  placeholder:text-[12px] focus:outline-none"
             />
             <input
               type="tel"
               placeholder="Phone Number"
-              className="flex-1 border-2 border-[#2A3C36] rounded-[4px] p-[18px] text-[#B2B2B2] placeholder:text-[#B2B2B2]  placeholder:text-[12px] focus:outline-none"
+              className="flex-1 border-2 border-[#1FFFA5] rounded-[4px] p-[18px] text-[#B2B2B2] placeholder:text-[#B2B2B2]  placeholder:text-[12px] focus:outline-none"
             />
           </div>
 
