@@ -6,7 +6,7 @@ import PricingCard from "./PricingCard";
 
 export default function Pricing() {
   return (
-    <div className="bg-[#0A0F0D] xl:px-[120px] sm:px-[64px] px-[16px]">
+    <div className="mt-10 bg-[#0A0F0D] xl:px-[120px] sm:px-[64px] px-[16px]">
       <h3
         className="font-medium font-manrope text-[#F5F5F5] xl:text-[48px] xl:leading-[72px] text-[36px] leading-[42px]
  -tracking-[2px]"

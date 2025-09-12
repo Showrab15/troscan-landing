@@ -1,36 +1,46 @@
-# Troscan Clone 🌐
+# Ena Ema Landing Page 🚀
 
-**Live Demo:** [https://troscan-clone-five.vercel.app/]
+Live Demo: [https://troscan-landing.vercel.app/]  
+Repository: [https://github.com/Showrab15/troscan-landing.git]
 
 ## Overview
 
-Troscan Clone is a pixel-perfect replica of the original Troscan website, featuring smooth animations, interactive UI elements, and fully responsive design for all devices. Every section, including Navbar, Banner, About Us, Gallery, Projects, Call to Action, Blogs, and Footer, has been recreated with the same hover interactions and animations as the original.
+This project is a **pixel-perfect implementation** of the custom-designed landing page provided by Ena Ema Technologies.  
+It was developed using **Next.js (App Router)**, **Tailwind CSS**, **Radix UI**, and **Framer Motion**, following the given Figma design for desktop, tablet, and mobile views.
 
-The project emphasizes clean code, responsiveness, and modern web development best practices.
+The goal of the project is to deliver a high-quality, reusable, and well-structured codebase that aligns with modern development standards.
 
 ## Key Features ✨
 
-- **Pixel-Perfect Clone** – Accurate replication of the original Troscan website.
-- **Smooth Animations** – Framer Motion used for all entrance, hover, and scroll animations.
-- **Responsive Design** – Fully optimized for mobile, tablet, and desktop screens.
-- **Interactive Elements** – Hover effects and animations identical to the original site.
-- **Section-Wise Structure** – Navbar, Banner, About Us, Gallery, Projects, Call to Action, Blogs, Footer.
+- **Pixel-Perfect Conversion** – Matches the provided Figma design across all screen sizes.
+- **Reusable Components** – Cards, pricing sections, FAQs, and buttons are modular and reusable.
+- **Radix UI Components** – Used for accessibility and consistent UI patterns (e.g., Accordion for FAQs).
+- **Smooth Animations** – Framer Motion used for entrance animations, hover effects, and transitions.
+- **Responsive Design** – Optimized for desktop, tablet, and mobile.
+- **Modern UI/UX** – Clean dark-themed design with accent highlights for strong CTAs.
+- **SEO-Friendly** – Meta tags, semantic HTML, and accessible components included.
 
 ## Tech Stack 🛠️
 
-- **Frontend:** React, Next.js, Tailwind CSS
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS, custom CSS
+- **Components:** Radix UI
 - **Animations:** Framer Motion
-- **State & Data:** React Hooks, React State, React Intersection Observer
-- **Performance:** Optimized layout with responsive design and smooth transitions
-- **Linting & Formatting:** ESLint, Next.js ESLint config
+- **Deployment:** Vercel
 
 ## Installation & Setup 🚀
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Showrab15/ena-ema-landing-page.git
+   cd ena-ema-landing-page
+   ```
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/Showrab15/troscan-clone.git
-cd troscan-clone
+git clone https://github.com/Showrab15/troscan-landing.git
+cd troscan-landing
 ```
 
 #### Install dependencies:
