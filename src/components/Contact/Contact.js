@@ -61,8 +61,11 @@ export default function Contact() {
           </div>
 
           <button
-            className="whitespace-nowrap mx-auto flex items-center justify-center gap-2 hover:gap-4 bg-[#1FFFA5]
-         text-[#002013] font-medium font-sans rounded-lg hover:rounded-[16px] px-8 py-4 w-full  text-[12px] md:text-[16px] shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset] hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
+            className="w-full  whitespace-nowrap mx-auto flex items-center justify-center
+            px-8 py-4 text-[12px] md:text-[16px] font-medium  text-[#002013] bg-[#1FFFA5]   
+             font-sans gap-2 hover:gap-4 rounded-lg hover:rounded-[16px]  
+          shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]
+           hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
           >
             Get my high-converting landing page{" "}
             <ArrowRightIcon className="w-[10px] h-[10px]" />

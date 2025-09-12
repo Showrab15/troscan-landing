@@ -1,5 +1,8 @@
+import { pricingPlans } from "@/utils/pricingPlans";
+
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import PricingCard from "./PricingCard";
 
 export default function Pricing() {
   return (
@@ -15,6 +18,14 @@ export default function Pricing() {
         No hidden fees, no surprises. Just premium landing pages at unbeatable
         prices.
       </p>
+
+      {/* Pricing Grid */}
+      <div className="sm:mt-[48px] mt-[16px] grid lg:gap-[48px] gap-[24px] lg:grid-cols-3">
+        {pricingPlans.map((plan, idx) => (
+          <PricingCard key={idx} {...plan} />
+        ))}
+      </div>
+
       {/* middle section */}
       <div className="flex gap-[20px] items-center my-[48px]">
         <Image src="/FlashIcon.svg" alt="Flash Icon" width={25} height={36} />
