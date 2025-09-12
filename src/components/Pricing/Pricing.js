@@ -57,15 +57,15 @@ export default function Pricing() {
           Get 10% OFF + Free Hosting Setup when you book this week.
         </p>
         <button
-          className="w-auto mt-[24px] sm:mt-[48px]  mx-auto flex items-center justify-center
+          className=" px-8 py-4 w-auto mt-[24px] sm:mt-[48px]  mx-auto flex items-center justify-center
                      gap-2 hover:gap-4 bg-[#1FFFA5]
                  text-[#002013] font-medium font-sans rounded-lg hover:rounded-[16px]
-                  px-8 py-4   text-[12px] md:text-[16px]
+                    text-[12px] md:text-[16px]
                    shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]
                     hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
         >
           Claim my 10% discount
-          <ArrowRightIcon className="text-[#002013] w-[10px] h-[10px]" />
+          <ArrowRightIcon className="text-[#002013] w-4 h-4" />
         </button>
       </section>
     </div>

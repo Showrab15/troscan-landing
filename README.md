@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Troscan Clone 🌐
 
-## Getting Started
+**Live Demo:** [https://troscan-clone-five.vercel.app/]
 
-First, run the development server:
+## Overview
+
+Troscan Clone is a pixel-perfect replica of the original Troscan website, featuring smooth animations, interactive UI elements, and fully responsive design for all devices. Every section, including Navbar, Banner, About Us, Gallery, Projects, Call to Action, Blogs, and Footer, has been recreated with the same hover interactions and animations as the original.
+
+The project emphasizes clean code, responsiveness, and modern web development best practices.
+
+## Key Features ✨
+
+- **Pixel-Perfect Clone** – Accurate replication of the original Troscan website.
+- **Smooth Animations** – Framer Motion used for all entrance, hover, and scroll animations.
+- **Responsive Design** – Fully optimized for mobile, tablet, and desktop screens.
+- **Interactive Elements** – Hover effects and animations identical to the original site.
+- **Section-Wise Structure** – Navbar, Banner, About Us, Gallery, Projects, Call to Action, Blogs, Footer.
+
+## Tech Stack 🛠️
+
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Animations:** Framer Motion
+- **State & Data:** React Hooks, React State, React Intersection Observer
+- **Performance:** Optimized layout with responsive design and smooth transitions
+- **Linting & Formatting:** ESLint, Next.js ESLint config
+
+## Installation & Setup 🚀
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Showrab15/troscan-clone.git
+cd troscan-clone
+```
+
+#### Install dependencies:
+
+```bash
+npm install
+
+```
+
+#### Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Build for production:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+## Usage 📝
 
-To learn more about Next.js, take a look at the following resources:
+- Browse the site to experience pixel-perfect animations and hover interactions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Interact with the Navbar, Banner, Gallery, and Projects sections.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Explore Blogs and Call-to-Action sections for smooth user experience.
 
-## Deploy on Vercel
+#### License 📄
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License – see the LICENSE
+file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Contact ✉️
+
+- Email: supto50showrab@gmail.com
+
+- Portfolio: https://showrab-paul-portfolio.vercel.app/
