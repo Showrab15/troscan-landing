@@ -152,24 +152,24 @@ export default function Form() {
         </button>
       </div>
 
-      <div className="mt-[16px] w-full text-[#F5F5F5] text-[12px] font-normal">
+      <div className="mt-[16px] w-full  text-[12px] text-[#B2B2B2] font-normal font-general-sans">
         {/* Mobile layout */}
-        <div className="flex justify-between md:hidden px-[ 16px]">
+        <div className="flex justify-between md:hidden ">
           {/* Left Side */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 ">
             <div className="flex items-center gap-2">
               <LockClosedIcon className="w-[16px] h-[16px]" />
               SSL secure
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex text-left items-center gap-2 whitespace-nowrap">
               <StarIcon className="w-[16px] h-[16px]" />
               Satisfaction guaranteed
             </div>
           </div>
 
           {/* Right Side */}
-          <div className="flex items-center gap-2">
-            <CheckIcon className="w-[16px] h-[16px]" />
+          <div className="text-[12px] flex text-right items-center gap-2 whitespace-nowrap">
+            <CheckIcon className="text-right w-[16px] h-[16px]" />
             Money-back guaranteed
           </div>
         </div>
