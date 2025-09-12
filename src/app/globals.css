@@ -49,3 +49,19 @@ body {
       rgba(31, 255, 165, 0.02) 100%
     );
 }
+@media (min-width: 300px) and (max-width: 639px) {
+  .br-400 {
+    display: block;
+  }
+}
+
+.br-400 {
+  display: none;
+}
+@layer utilities {
+  @media (max-width: 400px) {
+    .grid-cols-1-xs {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}

@@ -9,7 +9,7 @@ export default function Features() {
          -tracking-[2px]"
       >
         Why Businesses
-        <span className="text-[#1FFFA5]">Trust Us</span> With Their Designs
+        <span className="text-[#1FFFA5]"> Trust Us</span> With Their Designs
       </h3>
       <p className="text-center mt-[8px] font-normal font-general-sans sm:text-[16px] text-[14px] leading-[18px] sm:leading-[24px] text-[#F5F5F5]">
         We combine proven conversion frameworks with agency-level design to
