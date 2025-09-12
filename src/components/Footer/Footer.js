@@ -167,14 +167,15 @@ export default function Footer() {
         </div>
 
         {/* Right Side - Copyright and Icons */}
-        <div className="flex flex-col items-end space-y-3">
+        <div className="flex flex-col items-end space-y-4">
           {/* Copyright Text */}
-          <p className="text-[#0A0F0D] text-[12px] leading-[18px] font-normal font-sans text-right">
-            &copy; All rights reserved to Ena Ema Technologies
+          <p className=" text-[A0F0D] text-[12px] leading-[18px] font-normal font-sans text-right">
+            &copy; All rights reserved to <br className="sm:hidden block" /> Ena
+            Ema Technologies
           </p>
 
           {/* Social Icons */}
-          <div className="flex space-x-4">
+          <div className=" flex space-x-2 sm:space-x-4 items-center">
             <a
               href="https://www.linkedin.com"
               target="_blank"
