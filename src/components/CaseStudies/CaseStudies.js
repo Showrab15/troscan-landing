@@ -264,10 +264,10 @@
 //     </section>
 //   );
 // }
-
 "use client";
 
 import { caseStudies } from "@/utils/caseStudiesData";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -275,7 +275,6 @@ import { useEffect, useRef, useState } from "react";
 const CaseStudies = () => {
   const carouselRef = useRef(null);
   const [width, setWidth] = useState(0);
-
   useEffect(() => {
     if (carouselRef.current) {
       setWidth(
@@ -285,50 +284,104 @@ const CaseStudies = () => {
   }, []);
 
   return (
-    <div className="] py-16 px-4 sm:px-6 lg:px-8">
-      <h3 className="font-manrope font-medium text-center text-[#F5F5F5]  md:text-[36px]  md:leading-[42px] xl:text-[48px] xl:leading-[72px] -tracking-[2px]">
-        Case Studies
-      </h3>
-      <p className=" font-general mr-2 text-center  text-sm sm:text-[16px] leading-[18px] sm:leading-[24px] font-normal font-general-sans text-[#F5F5F5]">
-        See the designs that delivered results
+    <div className=" py-[120px] sm:py-[64px] px-4 sm:px-6 lg:px-8">
+      <h3
+        className="font-manrope font-medium text-center text-[#F5F5F5] leading-[42px]
+       -tracking-[2px]  text-[36px] 
+      md:text-[48px]  xl:text-[48px] xl:leading-[72px]"
+      >
+        {" "}
+        Case Studies{" "}
+      </h3>{" "}
+      <p className=" font-general mr-2 text-center text-sm sm:text-[16px] leading-[18px] sm:leading-[24px] font-normal font-general-sans text-[#F5F5F5]">
+        {" "}
+        See the designs that delivered results{" "}
       </p>
-
-      {/* Slider */}
+      {/* Mobile: grid, no animation */}
+      {/* Mobile: grid, no animation */}
+      <div className="mt-12 grid grid-cols-1 gap-4 md:hidden  ">
+        {caseStudies.map((study) => (
+          <div
+            key={study.id}
+            className="rounded-[12px] bg-[#151E1B] border-2 border-[#2A3C36] p-[12px]"
+          >
+            <div className="flex flex-col justify-between">
+              <Image
+                src={study.image}
+                alt={study.title}
+                width={300}
+                height={200}
+                className="mx-auto"
+              />
+              <div className="p-[12px] flex flex-col justify-between gap-4 items-start">
+                <h3
+                  style={{ fontFamily: "manrope" }}
+                  className="text-[#F5F5F5] text-[24px] leading-[26px] font-semibold font-manrope"
+                >
+                  {study.title}
+                </h3>
+                <ul className="flex flex-col gap-2 text-[#F5F5F5] text-[12px] font-general-sans text-right">
+                  {study.tags.map((tag, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-2 px-[16px] py-2 rounded-full border-[1px] border-[#003D25] bg-[#003D25] whitespace-nowrap text-[#B2B2B2] text-[12px] leading-[18px] font-normal font-general"
+                    >
+                      <Image
+                        src="/Check.svg"
+                        alt="icon"
+                        width={12}
+                        height={8}
+                        priority
+                      />
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Tablet & above: keep draggable carousel */}
       <div className="mt-12 overflow-hidden relative">
+        {" "}
         <motion.div
           ref={carouselRef}
-          className="flex md:gap-6 gap-4 cursor-grab"
+          className="hidden md:flex md:gap-6 gap-4 cursor-grab"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
         >
+          {" "}
           {caseStudies.map((study) => (
             <motion.div
               key={study.id}
-              className="flex-none 
-      snap-start rounded-[12px]
-      bg-[#151E1B] border-2 border-[#2A3C36] p-[12px]"
+              className="flex-none snap-start rounded-[12px] bg-[#151E1B] border-2 border-[#2A3C36] p-[12px]"
             >
+              {" "}
               <div className="flex flex-col justify-between">
+                {" "}
                 <Image
                   src={study.image}
                   alt={study.title}
                   width={459}
                   height={372}
-                  className=""
-                />
-
-                <div className="flex justify-between items-start ">
-                  <h3 className="text-[#F5F5F5] text-[16px] font-medium font-general-sans">
-                    {study.title}
-                  </h3>
-                  <ul className="text-[#F5F5F5] text-[12px] font-general-sans space-y-1 text-right max-w-[220px]">
+                  className="mx-auto"
+                />{" "}
+                <div className="p-[12px] flex justify-between gap-4 items-start ">
+                  {" "}
+                  <h3
+                    style={{ fontFamily: "manrope" }}
+                    className="text-[#F5F5F5] text-[24px] leading-[26px] font-semibold font-manrope"
+                  >
+                    {" "}
+                    {study.title}{" "}
+                  </h3>{" "}
+                  <ul className="flex flex-col gap-2 text-[#F5F5F5] text-[12px] font-general-sans space-y-1 text-right ">
+                    {" "}
                     {study.tags.map((tag, index) => (
                       <li
                         key={index}
-                        className="mb-6 inline-flex items-center gap-2 px-[16px] py-2
-                         rounded-full border-[1px] border-[#003D25] bg-[#003D25]
-                          whitespace-nowrap text-[#B2B2B2] text-[12px] leading-[18px]
-                           font-normal font-general-sans"
+                        className=" flex items-start gap-2 px-[16px] py-2 rounded-full border-[1px] border-[#003D25] bg-[#003D25] whitespace-nowrap text-[#B2B2B2] text-[12px] leading-[18px] font-normal font-general"
                       >
                         {" "}
                         <Image
@@ -337,17 +390,28 @@ const CaseStudies = () => {
                           width={12}
                           height={8}
                           priority
-                        />
-                        {tag}
+                        />{" "}
+                        {tag}{" "}
                       </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+                    ))}{" "}
+                  </ul>{" "}
+                </div>{" "}
+              </div>{" "}
             </motion.div>
-          ))}
-        </motion.div>
+          ))}{" "}
+        </motion.div>{" "}
       </div>
+      <button
+        className=" px-8 py-4 w-auto mt-[24px] sm:mt-[48px]  mx-auto flex items-center justify-center
+                            gap-2 hover:gap-4 bg-[#1FFFA5]
+                        text-[#002013] font-medium font-sans rounded-lg hover:rounded-[16px]
+                           text-[12px] md:text-[16px]
+                          shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]
+                           hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
+      >
+        I want similar results{" "}
+        <ArrowRightIcon className="text-[#002013] w-4 h-4" />
+      </button>
     </div>
   );
 };

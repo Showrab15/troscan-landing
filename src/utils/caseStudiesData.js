@@ -3,7 +3,6 @@ export const caseStudies = [
   {
     id: 1,
     title: "Flowpilot",
-    subtitle1: "Don't Stress Over Big",
     image: "/FlowPilot.png",
     tags: [
       "20% high conversion than average in first week",
@@ -12,9 +11,8 @@ export const caseStudies = [
   },
   {
     id: 2,
-    title: "Flowpilot",
-    subtitle1: "Don't Stress Over Big",
-    image: "/FlowPilot.png",
+    title: "GrowthSummit",
+    image: "/GrowthSummit.png",
     tags: [
       "20% high conversion than average in first week",
       "Clean and modern design with clear CTA",
@@ -24,7 +22,7 @@ export const caseStudies = [
     id: 3,
     title: "Flowpilot",
     subtitle1: "Don't Stress Over Big",
-    image: "/FlowPilot.png",
+    image: "/flowBite2.png",
     tags: [
       "20% high conversion than average in first week",
       "Clean and modern design with clear CTA",
