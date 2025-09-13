@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AutoScrollSection = () => {
+const Slider = () => {
   const images = [
     { id: 1, src: "/slider1.png", alt: "Mountain landscape" },
     { id: 2, src: "/slider2.png", alt: "Ocean sunset" },
@@ -12,11 +12,11 @@ const AutoScrollSection = () => {
   return (
     <div className="w-full overflow-hidden lg:mt-[80px] mt-[40px] ">
       <div className="relative">
-        <div className="flex animate-scroll-infinite gap-8 min-w-max">
+        <div className="flex animate-scroll-infinite gap-4 min-w-max">
           {[...images, ...images].map((image, index) => (
             <div
               key={index}
-              className="relative flex-shrink-0 md:w-[800px] md:h-[500px] w-[430px] h-[240px] overflow-hidden rounded-xl"
+              className="relative flex-shrink-0 md:w-[800px] md:h-[500px] w-[430px] h-[340px] overflow-hidden rounded-xl"
             >
               <Image
                 src={image.src}
@@ -33,4 +33,4 @@ const AutoScrollSection = () => {
   );
 };
 
-export default AutoScrollSection;
+export default Slider;

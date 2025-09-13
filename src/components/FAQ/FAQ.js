@@ -1,13 +1,11 @@
 // src/components/FAQ/FAQ.js
 "use client";
 import { faqData } from "@/utils/faqData";
-import ProcessSection from "../ProcessSection/ProcessSection";
 import FAQCard from "./FAQItem"; // still importing, just renamed conceptually
 
 const FAQSection = () => {
   return (
-    <div className="bg-[#151e1b] ">
-      <ProcessSection />
+    <div className=" ">
       <div className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2

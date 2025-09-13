@@ -49,12 +49,11 @@
 // }
 "use-client";
 import Image from "next/image";
-import AutoScrollSection from "../Slider/Slider";
 import Form from "../ui/Form";
 
 export default function Banner() {
   return (
-    <div className="bg-[#151E1B]">
+    <div>
       <section className="min-h-scr een  overflow-hidden">
         <div className="relative bg-[#1FFFA5]/20 backdrop-blur-[351.4px] left-1/2 -translate-x-1/2 mx-auto">
           <Image
@@ -108,7 +107,6 @@ export default function Banner() {
           </div>
         </div>
       </section>
-      <AutoScrollSection />
     </div>
   );
 }

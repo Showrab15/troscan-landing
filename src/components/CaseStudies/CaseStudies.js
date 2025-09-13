@@ -1,28 +1,28 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+// import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-export default function CaseStudies() {
-  return (
-    <div className="bg-[#0A0F0D]">
-      <h3 className="font-manrope font-medium text-center text-[#F5F5F5]  md:text-[36px]  md:leading-[42px] xl:text-[48px] xl:leading-[72px] -tracking-[2px]">
-        Case Studies
-      </h3>
-      <p className="mr-2 text-center  text-sm sm:text-[16px] leading-[18px] sm:leading-[24px] font-normal font-general-sans text-[#F5F5F5]">
-        See the designs that delivered results
-      </p>
-      <button
-        className=" px-8 py-4 w-auto mt-[24px] sm:mt-[48px]  mx-auto flex items-center justify-center
-                           gap-2 hover:gap-4 bg-[#1FFFA5]
-                       text-[#002013] font-medium font-sans rounded-lg hover:rounded-[16px]
-                          text-[12px] md:text-[16px]
-                         shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]
-                          hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
-      >
-        I want similar results{" "}
-        <ArrowRightIcon className="text-[#002013] w-4 h-4" />
-      </button>
-    </div>
-  );
-}
+// export default function CaseStudies() {
+//   return (
+//     <div className="bg-[#0A0F0D]">
+//       <h3 className="font-manrope font-medium text-center text-[#F5F5F5]  md:text-[36px]  md:leading-[42px] xl:text-[48px] xl:leading-[72px] -tracking-[2px]">
+//         Case Studies
+//       </h3>
+//       <p className="mr-2 text-center  text-sm sm:text-[16px] leading-[18px] sm:leading-[24px] font-normal font-general-sans text-[#F5F5F5]">
+//         See the designs that delivered results
+//       </p>
+//       <button
+//         className=" px-8 py-4 w-auto mt-[24px] sm:mt-[48px]  mx-auto flex items-center justify-center
+//                            gap-2 hover:gap-4 bg-[#1FFFA5]
+//                        text-[#002013] font-medium font-sans rounded-lg hover:rounded-[16px]
+//                           text-[12px] md:text-[16px]
+//                          shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]
+//                           hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
+//       >
+//         I want similar results{" "}
+//         <ArrowRightIcon className="text-[#002013] w-4 h-4" />
+//       </button>
+//     </div>
+//   );
+// }
 
 // "use client";
 // import { ArrowRightIcon, CheckIcon } from "@radix-ui/react-icons";
@@ -264,3 +264,92 @@ export default function CaseStudies() {
 //     </section>
 //   );
 // }
+
+"use client";
+
+import { caseStudies } from "@/utils/caseStudiesData";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+
+const CaseStudies = () => {
+  const carouselRef = useRef(null);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      setWidth(
+        carouselRef.current.scrollWidth - carouselRef.current.offsetWidth
+      );
+    }
+  }, []);
+
+  return (
+    <div className="] py-16 px-4 sm:px-6 lg:px-8">
+      <h3 className="font-manrope font-medium text-center text-[#F5F5F5]  md:text-[36px]  md:leading-[42px] xl:text-[48px] xl:leading-[72px] -tracking-[2px]">
+        Case Studies
+      </h3>
+      <p className=" font-general mr-2 text-center  text-sm sm:text-[16px] leading-[18px] sm:leading-[24px] font-normal font-general-sans text-[#F5F5F5]">
+        See the designs that delivered results
+      </p>
+
+      {/* Slider */}
+      <div className="mt-12 overflow-hidden relative">
+        <motion.div
+          ref={carouselRef}
+          className="flex md:gap-6 gap-4 cursor-grab"
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+        >
+          {caseStudies.map((study) => (
+            <motion.div
+              key={study.id}
+              className="flex-none 
+      snap-start rounded-[12px]
+      bg-[#151E1B] border-2 border-[#2A3C36] p-[12px]"
+            >
+              <div className="flex flex-col justify-between">
+                <Image
+                  src={study.image}
+                  alt={study.title}
+                  width={459}
+                  height={372}
+                  className=""
+                />
+
+                <div className="flex justify-between items-start ">
+                  <h3 className="text-[#F5F5F5] text-[16px] font-medium font-general-sans">
+                    {study.title}
+                  </h3>
+                  <ul className="text-[#F5F5F5] text-[12px] font-general-sans space-y-1 text-right max-w-[220px]">
+                    {study.tags.map((tag, index) => (
+                      <li
+                        key={index}
+                        className="mb-6 inline-flex items-center gap-2 px-[16px] py-2
+                         rounded-full border-[1px] border-[#003D25] bg-[#003D25]
+                          whitespace-nowrap text-[#B2B2B2] text-[12px] leading-[18px]
+                           font-normal font-general-sans"
+                      >
+                        {" "}
+                        <Image
+                          src="/Check.svg"
+                          alt="icon"
+                          width={12}
+                          height={8}
+                          priority
+                        />
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default CaseStudies;

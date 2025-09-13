@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const ProcessSection = () => {
   return (
-    <section className="bg-[#0A0F0D] py-20 ">
+    <section className=" py-20 ">
       {/* Header */}
       <div className="text-center mb-[48px]">
         <h2
-          className="text-[#F5F5F5] font-manrope font-medium text-5xl leading-[72px]
+          className="text-[#F5F5F5] font-manrope font-medium text-[36px]  leading-[42px] xl:text-5xl xl:leading-[72px]
          -tracking-[2px] mb-[8px]"
         >
           From Idea to Live Landing Page in{" "}
           <span className="text-[#1FFFA5]">Just 5 Days</span>
         </h2>
         <p
-          className="text-[#F5F5F5] font-general-sans font-normal text-base 
+          className="text-[#F5F5F5] font-general-sans font-normal  text-sm sm:text-base 
         leading-6 tracking-normal"
         >
           Our streamlined process ensures fast delivery without compromising

@@ -22,7 +22,12 @@
 
 export default function FAQCard({ question, answer }) {
   return (
-    <div className=" rounded-[12px] bg-[#192420] p-[24px] transition-all duration-300 ease-in-out hover:bg-gradient-to-b hover:from-[#192420] hover:to-[#192420] hover:shadow-[inset_0_0_0_1px_rgba(31,255,165,0.2)] relative overflow-hidden group">
+    <div
+      className=" rounded-[12px] bg-[#192420] p-[24px] transition-all
+     duration-300 ease-in-out hover:bg-gradient-to-b
+      hover:from-[#192420] hover:to-[#192420] 
+      hover:shadow-[inset_0_0_0_1px_rgba(31,255,165,0.2)] relative overflow-hidden group"
+    >
       {/* Radial gradient overlay for hover effect */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out bg-gradient-radial from-[rgba(31,255,165,0.2)] via-[rgba(31,255,165,0.1)] to-[rgba(31,255,165,0.02)] pointer-events-none"
