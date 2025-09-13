@@ -9,11 +9,8 @@ const FAQSection = () => {
       <div className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2
-            className="text-center text-[#F5F5F5] mb-12 text-[48px] font-medium leading-[72px] 
-        -tracking-[2px] "
-            style={{
-              fontFamily: "Manrope, sans-serif",
-            }}
+            className="text-center text-[#F5F5F5] mb-12 text-[48px] font-medium 
+            leading-[72px] -tracking-[2px] font-manrope"
           >
             Got Questions<span className="text-[#1FFFA5]">? </span>
             {`We've`} Got The Answers

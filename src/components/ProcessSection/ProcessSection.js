@@ -16,7 +16,7 @@ const ProcessSection = () => {
           <span className="text-[#1FFFA5]">Just 5 Days</span>
         </h2>
         <p
-          className="text-[#F5F5F5] font-general-sans font-normal  text-sm sm:text-base 
+          className="text-[#F5F5F5] font-general font-normal  text-sm sm:text-base 
         leading-6 tracking-normal"
         >
           Our streamlined process ensures fast delivery without compromising
@@ -36,7 +36,7 @@ const ProcessSection = () => {
             {/* Day Badge */}
             <div
               className="absolute -top-3 left-1/2 -translate-x-1/2  inline-block bg-[#151E1B] text-[#1FFFA5] px-[8px]  
-              rounded-full text-[12px] font-General Sans font-normal  border-1 border-[#1FFFA5]"
+              rounded-full text-[12px] font-general  font-normal  border-1 border-[#1FFFA5]"
             >
               {step.day}
             </div>
@@ -58,11 +58,11 @@ const ProcessSection = () => {
 
             {/* Content */}
             <div>
-              <h3 className="mx-auto text-[#F5F5F5] font-general-sans font-medium text-xl mb-3 whitespace-nowrap">
+              <h3 className="mx-auto text-[#F5F5F5] font-general font-medium text-xl mb-3 whitespace-nowrap">
                 {step.title}
               </h3>
 
-              <p className="text-[#B2B2B2] font-general-sans text-sm leading-[18px] mx-auto max-w-[232px]">
+              <p className="text-[#B2B2B2] font-general text-sm leading-[18px] mx-auto max-w-[232px]">
                 {step.description}
               </p>
             </div>

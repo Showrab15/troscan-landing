@@ -21,7 +21,7 @@ export default function FeaturesCard({
       <h3 className="mt-[38px] text-[16px] font-medium font-manrope leading-[24px] text-[#F5F5F5]">
         {title}
       </h3>
-      <p className="mt-3 text-[#B2B2B2] text-sm leading-[18px] font-general-sans regular">
+      <p className="mt-3 text-[#B2B2B2] text-sm leading-[18px] font-general regular">
         {description}
       </p>
     </div>

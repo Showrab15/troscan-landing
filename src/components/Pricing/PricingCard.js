@@ -1,5 +1,6 @@
 "use client";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Button from "../ui/Button";
 
 export default function PricingCard({
   title,
@@ -22,7 +23,7 @@ export default function PricingCard({
       {popular && (
         <span
           className="absolute -top-3 left-6 rounded-full border-2 border-[#1FFFA5]
-         bg-[#151E1B] px-3 py-[6px] text-xs font-normal font-general-sans text-[#1FFFA5]"
+         bg-[#151E1B] px-3 py-[6px] text-xs font-normal font-general text-[#1FFFA5]"
         >
           Most popular
         </span>
@@ -34,7 +35,7 @@ export default function PricingCard({
           <h3 className="font-semibold font-manrope  text-[24px] leading-[26px] -tracking-[1px] text-[#F5F5F5]">
             {title}
           </h3>
-          <p className="whitespace-nowrap mt-2 font-regular font-general-sans text-sm leading-[18px] text-[#F5F5F5]">
+          <p className="whitespace-nowrap mt-2 font-regular font-general text-sm leading-[18px] text-[#F5F5F5]">
             {description}
           </p>
         </div>
@@ -47,7 +48,7 @@ export default function PricingCard({
       <div className="lg:my-[36px] sm:my-[27px] my-[24px] h-[1px] w-full bg-[#2A3C36]" />
 
       {/* Features */}
-      <ul className="flex flex-col gap-3 text-left text-[12px] font-general-sans font-normal text-[#B2B2B2]">
+      <ul className="flex flex-col gap-3 text-left text-[12px] font-general font-normal text-[#B2B2B2]">
         {features.map((feature, i) => (
           <li key={i} className="flex items-center gap-[14px]">
             <span className="h-[6px] w-[6px] rounded-full bg-[#1FFFA5]" />
@@ -57,15 +58,14 @@ export default function PricingCard({
       </ul>
 
       {/* CTA Button */}
-      <button
-        className={`mt-8 inline-flex w-full items-center justify-center gap-3 rounded-lg px-8 py-4 text-sm font-medium transition-all duration-300 ${
-          popular
-            ? "text-[#002013] bg-[#1FFFA5] font-sans gap-2 hover:gap-4 rounded-lg hover:rounded-[16px]  shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset] hover:shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset]"
-            : "bg-[#003D25] text-[#00E58A] text-[16px] font-medium font-general-sans"
-        }`}
-      >
-        Start my project <ArrowRightIcon className="h-4 w-4" />
-      </button>
+      <div className="mt-8">
+        <Button
+          text="Start my project"
+          fullWidth
+          variant={popular ? "primary" : "secondary"}
+          icon={ArrowRightIcon}
+        />
+      </div>
     </div>
   );
 }

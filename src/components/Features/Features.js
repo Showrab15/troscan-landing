@@ -1,37 +1,3 @@
-// import { featuresData } from "@/utils/featuresData";
-// import FeaturesCard from "./FeaturesCard";
-
-// export default function Features() {
-//   return (
-//     <div className="xl:py-[100px] py-[64px] bg-[#151E1B] xl:px-[120px] sm:px-[64px] px-[16px]">
-//       <h3
-//         className="text-center font-medium font-manrope text-[#F5F5F5] xl:text-[48px] xl:leading-[72px] text-[36px] leading-[42px]
-//          -tracking-[2px]"
-//       >
-//         Why Businesses
-//         <span className="text-[#1FFFA5]"> Trust Us</span>{" "}
-//         <br className="hidden sm:block lg:hidden" /> With Their Designs
-//       </h3>
-//       <p className="text-center mt-[8px] font-normal font-general-sans sm:text-[16px] text-[14px] leading-[18px] sm:leading-[24px] text-[#F5F5F5]">
-//         We combine proven conversion frameworks with agency-level design to{" "}
-//         <br className="hidden sm:block lg:hidden" />
-//         deliver results that matter.
-//       </p>
-
-//       {/* Features Grid */}
-//       <div className="sm:mt-[48px] mt-[16px] grid sm:gap-[8px] md:gap-[36px] gap-[24px] sm:grid-cols-3">
-//         {featuresData.map((features, index) => (
-//           <FeaturesCard
-//             key={index}
-//             icon={features.icon}
-//             title={features.title}
-//             description={features.description}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 "use client";
 import { featuresData } from "@/utils/featuresData";
 import { motion } from "framer-motion";
@@ -74,7 +40,7 @@ export default function Features() {
           <span className="text-[#1FFFA5]"> Trust Us</span>{" "}
           <br className="hidden sm:block lg:hidden" /> With Their Designs
         </h3>
-        <p className="text-center mt-[8px] font-normal font-general-sans sm:text-[16px] text-[14px] leading-[18px] sm:leading-[24px] text-[#F5F5F5]">
+        <p className="text-center mt-[8px] font-normal font-general sm:text-[16px] text-[14px] leading-[18px] sm:leading-[24px] text-[#F5F5F5]">
           We combine proven conversion frameworks with agency-level design to{" "}
           <br className="hidden sm:block lg:hidden" />
           deliver results that matter.

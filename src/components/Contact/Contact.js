@@ -10,7 +10,7 @@ export default function Contact() {
       <h2
         className=" text-[36px] leading-[36px] md:text-[64px]
          md:leading-[72px] xl:text-[72px] xl:leading-[72px] font-bold
-       text-[#F5F5F5] mb-4 font-sans"
+       text-[#F5F5F5] mb-4 font-manrope"
       >
         Ready to Turn <br className="xl:hidden md:block hidden" /> Visitors Into{" "}
         <br className="md:block hidden" />
