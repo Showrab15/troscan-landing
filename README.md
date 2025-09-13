@@ -31,12 +31,6 @@ The goal of the project is to deliver a high-quality, reusable, and well-structu
 ## Installation & Setup 🚀
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Showrab15/ena-ema-landing-page.git
-   cd ena-ema-landing-page
-   ```
-
-Clone the repository:
 
 ```bash
 git clone https://github.com/Showrab15/troscan-landing.git
