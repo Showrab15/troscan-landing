@@ -60,11 +60,11 @@ npm run build
 
 ## Usage 📝
 
-- Browse the site to experience pixel-perfect animations and hover interactions.
-
-- Interact with the Navbar, Banner, Gallery, and Projects sections.
-
-- Explore Blogs and Call-to-Action sections for smooth user experience.
+- Explore the landing page to see **pixel-perfect sections** including Hero Banner, Features, Pricing, and FAQs.
+- Interact with **buttons, cards, and CTA sections** to experience hover effects and smooth transitions.
+- Open the **FAQ Accordion** powered by Radix UI to view answers interactively.
+- Observe responsive layouts and animations on **desktop, tablet, and mobile** screens.
+- Designed for developers to **reuse components** like cards, sections, and buttons in other projects.
 
 #### License 📄
 
